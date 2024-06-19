@@ -47,14 +47,15 @@ export const PageLayout = () => {
                         />
                     </Card.Header>
                     <Card.Body className="p-4">
-                    <Card.Title className="text-center" style={{ fontSize: '1.65rem', fontWeight: 'bold' }}>
-    {isAuthenticated ? "Successful Integration" : "Access SharePoint through HubSpot"}
-</Card.Title>
-<Card.Text className="text-center" style={{ fontSize: '1.1rem', color: '#555' }} dangerouslySetInnerHTML={{ __html: isAuthenticated
-    ? "Account Integrated with SharePoint"
-    : "By clicking the <strong>Integrate</strong> button, you will be redirected to the Microsoft Sign-In page.<br/><br/>There you should <strong>Sign In</strong> to integrate your HubSpot account with SharePoint"
-}}>
-</Card.Text>
+                        <Card.Title className="text-center" style={{ fontSize: '1.65rem', fontWeight: 'bold' }}>
+                            {isAuthenticated ? "Successful Integration" : "Access SharePoint through HubSpot"}
+                        </Card.Title>
+                        <Card.Text className="text-center" style={{ fontSize: '1.1rem', color: '#555' }} dangerouslySetInnerHTML={{
+                            __html: isAuthenticated
+                                ? "Account Integrated with SharePoint"
+                                : "By clicking the <strong>Integrate</strong> button, you will be redirected to the Microsoft Sign-In page.<br/><br/>There you should <strong>Sign In</strong> to integrate your HubSpot account with SharePoint"
+                        }}>
+                        </Card.Text>
 
                         {isAuthenticated && (
                             <Card.Text className="text-center" style={{ fontSize: '1.1rem', color: '#555' }} dangerouslySetInnerHTML={{ __html: "By clicking the <strong>Disintegrate</strong> button, your HubSpot account will no longer be integrated with SharePoint." }}>

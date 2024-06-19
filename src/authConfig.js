@@ -7,14 +7,14 @@ export const msalConfig = {
     auth: {
         clientId: clientId,
         authority: `https://login.microsoftonline.com/${tenantId}`,
-        redirectUri: /*"http://localhost:3000"*/ "https://sharepoint-integration-with-hubspot-1.onrender.com",
+        redirectUri: /*"http://localhost:3000"*/ "https://react-card-for-authentication-between-hubspot-sharepoint.vercel.app/",
     },
     cache: {
         cacheLocation: "sessionStorage",
         storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
     },
     system: {	
-        loggerOptions: {	
+        loggerOptions: {	    
             loggerCallback: (level, message, containsPii) => {	
                 if (containsPii) {		
                     return;		
