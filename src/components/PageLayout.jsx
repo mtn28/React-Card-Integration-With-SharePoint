@@ -58,7 +58,7 @@ export const PageLayout = () => {
                         </Card.Text>
 
                         {isAuthenticated && (
-                            <Card.Text className="text-center" style={{ fontSize: '1.1rem', color: '#555' }} dangerouslySetInnerHTML={{ __html: "By clicking the <strong>Disintegrate</strong> button, your HubSpot account will no longer be integrated with SharePoint." }}>
+                            <Card.Text className="text-center" style={{ fontSize: '1.1rem', color: '#55 5' }} dangerouslySetInnerHTML={{ __html: "By clicking the <strong>Disintegrate</strong> button, your HubSpot account will no longer be integrated with SharePoint." }}>
                             </Card.Text>
                         )}
                         <div className="d-flex justify-content-center mt-4">
